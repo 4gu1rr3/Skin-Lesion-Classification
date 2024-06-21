@@ -1,6 +1,7 @@
-torch
-torchvision
-pytorch-lightning
-Pillow
-pandas
-efficientnet-pytorch
+python==3.8.19
+torch==2.2.2+cu118
+torchvision==0.17.2+cu118
+pytorch-lightning==2.2.1
+efficientnet-pytorch==0.7.1
+Pillow==10.2.0
+pandas==2.0.3
