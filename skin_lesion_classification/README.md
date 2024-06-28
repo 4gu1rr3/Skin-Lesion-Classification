@@ -16,3 +16,27 @@ pip install -r requirements.txt
 ```
 
 Alternatively, if you're using Jupyter Notebook, you can execute the first cell of our notebook to install the dependencies.
+
+## How to run the Python file using argparser
+
+### Main command
+
+```bash
+python script.py --model <model_name> --num_classes <number_of_classes> --name <experiment_name>
+```
+
+#### Complete example
+
+Script to train a VGG model
+
+```bash
+python script.py --model vgg --num_classes 2 --name 'TESTING_VGGClassifier_lr1e4_freezing_all_except_last_layer'
+```
+
+#### Complete example
+
+Script to train a ResNet model
+
+```bash
+python script.py --model resnet --num_classes 2 --name 'TESTING_ResNetClassifier_lr1e4_freezing_all_except_last_layer'
+```
