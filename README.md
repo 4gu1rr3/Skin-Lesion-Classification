@@ -46,10 +46,10 @@ pip install -r requirements.txt
 
 1. **Download Datasets**:  
    You need to download the following datasets and place them in the appropriate folders:
-   - [ISIC 2019](https://www.isic-archive.com/)
-   - [ISIC 2020](https://www.isic-archive.com/)
-   - [HAM10000](https://www.kaggle.com/datasets/ryanchou/ham10000)
-   - [PH2 Dataset](https://www.fc.ul.pt/en/courses/msc/Information-Systems-and-Computing/Projects/2017-2018/PH2)
+   - [ISIC 2019](https://challenge.isic-archive.com/data/)
+   - [ISIC 2020](https://challenge.isic-archive.com/data/)
+   - [HAM10000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
+   - [PH2 Dataset](https://www.fc.up.pt/addi/ph2%20database.html)
 
    Once downloaded, ensure that the images and CSV files are placed as described in the `datasets_config.json` file. The structure should be as follows:
 
