@@ -1,0 +1,19 @@
+{
+  "ISIC2019": {
+    "csv_file": "ISIC2019_nv_mel.csv",
+    "data_path_1": "ISIC_2020_Training_Input"
+  },
+  "ISIC2020": {
+    "csv_file": "ISIC2020_nv_mel.csv",
+    "data_path_1": "ISIC_2020_Training_JPEG/train"
+  },
+  "PH2": {
+    "csv_file": "PH2_dataset_nv_mel.csv",
+    "data_path_1": "PH2Dataset/PH2DatasetImages"
+  },
+  "HAM_NV_MEL": {
+    "csv_file": "HAM10000_metadata_nv_mel.csv",
+    "data_path_1": "HAM10000_images_part_1",
+    "data_path_2": "HAM10000_images_part_2"
+  }
+}
