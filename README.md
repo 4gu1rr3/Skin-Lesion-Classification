@@ -1,8 +1,6 @@
 # Skin Lesion Classification using Deep Learning
 
-## MALTA Lab
-
-## Institution:
+### MALTA Lab
 - Escola Politécnica, PUCRS
 
 This project is focused on classifying skin lesions using deep learning techniques. It utilizes various datasets, including ISIC 2019, ISIC 2020, HAM10000, and PH2, to train and evaluate models such as Vision Transformers (ViT) and other pre-trained convolutional neural networks (CNNs).
@@ -54,11 +52,15 @@ pip install -r requirements.txt
    Once downloaded, ensure that the images and CSV files are placed as described in the `datasets_config.json` file. The structure should be as follows:
 
    ```
-   datasets/
+   ./
+     ├── CustomDataset.py
+     ├── datasets_config.json
+     ├── ExperimentRunner.py
+     ├── GenericClassifier.py
      ├── ISIC_2020_Training_Input/
      ├── ISIC_2020_Training_JPEG/
      ├── PH2Dataset/
-     └── HAM10000_images_part_1/
+     ├── HAM10000_images_part_1/
      └── HAM10000_images_part_2/
    ```
 
@@ -94,6 +96,45 @@ pip install -r requirements.txt
    ```
 
    This will train a model using the specified dataset and model type. The results will be logged in the `logs/` directory, and metrics will be saved in the `results/` directory.
+
+   ### Command-Line Arguments Breakdown:
+
+- `--dataset`: Specifies which dataset to use. Possible options are:
+  - `ISIC2019`
+  - `ISIC2020`
+  - `HAM10000`
+  - `PH2`
+
+- `--model`: Specifies the model to use. Possible options are:
+  - `resnet`
+  - `vgg`
+  - `alexnet`
+  - `efficientnet`
+  - `inception`
+  - `vit`
+  - `vitmae`
+
+- `--learning_rate`: The initial learning rate for the optimizer. Example: `0.0001`
+
+- `--max_epochs`: The maximum number of epochs to train. Example: `10`
+
+- `--balanced`: If set, the dataset will be balanced using class weighting to handle imbalanced data.
+
+- `--horizontal_flip`: If set, horizontal flip augmentation will be applied to the images.
+
+- `--vertical_flip`: If set, vertical flip augmentation will be applied to the images.
+
+- `--rotation`: Degrees of rotation for augmentation. Example: `30`
+
+- `--crop`: Random resized crop parameters in the format `[enabled, min_scale, max_scale]`. Example: `1.0 0.8 1.0`
+
+- `--device`: Specifies the device to run on. Possible values are:
+  - `cuda:0`
+  - `cuda:1`
+  - `cpu`
+
+- `--color_jitter`: Apply color jitter augmentation with the specified values for brightness, contrast, saturation, and hue. Example: `0.2 0.2 0.2 0.2`
+
 
 ## Outputs
 
