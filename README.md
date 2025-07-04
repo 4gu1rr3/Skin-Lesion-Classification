@@ -75,13 +75,7 @@ pip install -r requirements.txt
    ```
 
    This will generate CSV files such as `ISIC2019_nv_mel.csv` and `HAM10000_metadata_nv_mel.csv`.
-
-3. **Configure the Experiment**:  
-   Before running the experiments, configure the dataset and model by specifying the parameters in the command line. Example:
-
-   ```bash
-   python script_args.py --dataset ISIC2019 --model vit --learning_rate 0.0001 --max_epochs 10
-   ```
+   
 
 ## Running the Program
 
